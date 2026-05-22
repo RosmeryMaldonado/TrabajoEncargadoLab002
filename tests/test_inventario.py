@@ -70,45 +70,45 @@ def test_buscar_producto_inexistente():
 # PRUEBAS QUE FALLARÁN
 # =========================
 
-# Deberán corregir el sistema
-# para que estas pruebas funcionen correctamente.
+Deberán corregir el sistema
+para que estas pruebas funcionen correctamente.
 
 
-# def test_no_permitir_stock_negativo():
-#     producto = Producto("Laptop", 3000, 5)
+def test_no_permitir_stock_negativo():
+    producto = Producto("Laptop", 3000, 5)
 
-#     with pytest.raises(ValueError):
-#         producto.vender(10)
-
-
-# def test_no_permitir_precio_negativo():
-#     producto = Producto("Mouse", 50, 5)
-
-#     with pytest.raises(ValueError):
-#         producto.actualizar_precio(-100)
+    with pytest.raises(ValueError):
+        producto.vender(10)
 
 
-# def test_no_permitir_reabastecimiento_negativo():
-#     producto = Producto("Teclado", 100, 5)
+def test_no_permitir_precio_negativo():
+    producto = Producto("Mouse", 50, 5)
 
-#     with pytest.raises(ValueError):
-#         producto.reabastecer(-5)
-
-
-# def test_no_permitir_cantidad_negativa_venta():
-#     producto = Producto("Monitor", 800, 5)
-
-#     with pytest.raises(ValueError):
-#         producto.vender(-1)
+    with pytest.raises(ValueError):
+        producto.actualizar_precio(-100)
 
 
-# def test_no_permitir_productos_duplicados():
-#     inventario = Inventario()
+def test_no_permitir_reabastecimiento_negativo():
+    producto = Producto("Teclado", 100, 5)
 
-#     producto1 = Producto("Laptop", 3000, 5)
-#     producto2 = Producto("Laptop", 4000, 8)
+    with pytest.raises(ValueError):
+        producto.reabastecer(-5)
 
-#     inventario.agregar_producto(producto1)
 
-#     with pytest.raises(ValueError):
-#         inventario.agregar_producto(producto2)
+def test_no_permitir_cantidad_negativa_venta():
+    producto = Producto("Monitor", 800, 5)
+
+    with pytest.raises(ValueError):
+        producto.vender(-1)
+
+
+def test_no_permitir_productos_duplicados():
+    inventario = Inventario()
+
+    producto1 = Producto("Laptop", 3000, 5)
+    producto2 = Producto("Laptop", 4000, 8)
+
+    inventario.agregar_producto(producto1)
+
+    with pytest.raises(ValueError):
+        inventario.agregar_producto(producto2)
