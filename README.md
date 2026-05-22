@@ -1,42 +1,46 @@
-# Laboratorio 02 - Pruebas Unitarias Automatizadas con Pytest
+# Laboratorio Semana 02 — Sistema de Inventario
 
 ## Descripción
 
-Este laboratorio tiene como objetivo aplicar pruebas unitarias automatizadas utilizando pytest dentro del proceso de pruebas de software.
+Este laboratorio tiene como objetivo aplicar pruebas unitarias y técnicas básicas de aseguramiento de calidad utilizando Python y pytest.
 
-Durante el desarrollo del laboratorio se implementan pruebas sobre métodos y funciones en Python, permitiendo identificar defectos, validar resultados esperados y comprender el nivel unitario dentro de la clasificación de pruebas de software.
-
----
-
-## Objetivos
-
-- Aplicar pruebas unitarias automatizadas utilizando pytest.
-- Verificar el funcionamiento de métodos y funciones en Python.
-- Detectar y corregir defectos mediante pruebas automatizadas.
-- Comprender el nivel unitario dentro del proceso de pruebas.
-- Gestionar versiones del proyecto utilizando Git y GitHub.
+El estudiante deberá:
+- analizar el código fuente,
+- identificar defectos,
+- implementar pruebas,
+- corregir errores,
+- mejorar la calidad del sistema.
 
 ---
 
-## Tecnologías Utilizadas
+# Objetivos
 
-- Python 3
-- Pytest
-- Visual Studio Code
-- Git
-- GitHub
+- Aplicar pruebas unitarias con pytest.
+- Detectar defectos en código fuente.
+- Implementar validaciones y manejo de excepciones.
+- Aplicar buenas prácticas de calidad de software.
+- Utilizar GitHub Classroom para control de versiones y entregas.
 
 ---
 
-## Estructura del Proyecto
+# Estructura del Proyecto
 
 ```text
-proyecto/
+laboratorio-qa-inventario/
+│
+├── .github/
+│   └── workflows/
+│       ├── classroom.yml
+│       └── pytest.yml
 │
 ├── src/
-│   └── usuario.py
+│   ├── __init__.py
+│   └── inventario.py
 │
 ├── tests/
-│   └── test_usuario.py
+│   ├── __init__.py
+│   └── test_inventario.py
 │
+├── requirements.txt
+├── .gitignore
 └── README.md
